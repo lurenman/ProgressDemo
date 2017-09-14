@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical" >
+<!--    颜色和不透明度值以16进制表示，任何一种颜色的值范围都是0到255（00到ff）
+    。对于alpha，00表示完全透明，ff表示完全不透明。表达式顺序是“aabbggrr”，
+    其中"aa=alpha"(00到ff)；“bb=blue”（00到ff）；“gg=breen”（00到ff）；“rr=red”（00到ff）。
+    如不透明度50%的蓝色，则值为：7fff0000。-->
+
+    <LinearLayout
+        android:layout_width="140dip"
+        android:layout_height="114dip"
+        android:background="@drawable/dialogbg"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialogload"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_describe"
+            android:textSize="14sp"
+            android:textColor="#2b2b2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="登录中..." />
+    </LinearLayout>
+
+</LinearLayout>

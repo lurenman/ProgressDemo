@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义圆形进度条"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.example.administrator.progressdemo.ArcProgresslibrary.ArcProgress
+        android:id="@+id/myProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:arcCapRound="true"
+        app:borderWidth="5dp"
+        app:degree="30"
+        app:progressColor="@color/colorPrimary"
+        app:progressStyle="arc"
+        app:radius="100dp"
+        app:tickDensity="3"
+        app:tickWidth="2dp"
+        app:unprogresColor="@color/colorAccent" />
+
+
+</LinearLayout>
